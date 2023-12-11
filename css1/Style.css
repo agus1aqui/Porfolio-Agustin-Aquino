@@ -10,6 +10,7 @@ body {
     color: #fefefe;
     margin: 16px;
     font-weight: 400;
+
 }
 
 /*header*/
@@ -19,7 +20,7 @@ body {
     border-bottom: 1px solid #fefefe;
     height: 85px;
     margin: 14px 16px;
-    align-items: center;
+    align-items: center; flex-wrap: nowrap;
 }
 
 .headerHome .titulo h1 {
@@ -56,7 +57,7 @@ a {
 
 /*section*/
 .sectionHome {
-    display: flex;
+    display: flex; align-items: center; justify-content: center;
     height: 1fr;
     width: 1fr;
     margin: 0px 16px;
@@ -70,7 +71,9 @@ a {
     max-width: fit-content;
     padding: 0px 30px;
 }
-
+.headerHome {
+    display: flex; align-items: center;
+}
 .sectionHome .article1 h1 {
     font-size: 80px;
     font-weight: 700;
@@ -128,14 +131,14 @@ padding: 10px 10px;
 }
 /*pagina projectos*/
 #Projectos {
-    display: flex; flex-direction: row;
+    display: flex; flex-direction: row; align-items: center;
 }
 .tittle {
-    font-size: 80px; font-weight: 700; text-align: center; padding-top: 100px; justify-content: center;
+    font-size: 80px; font-weight: 700; text-align: center; align-items: center;
 }
 .cardsProjectos {
     display: flex; flex-direction: row;
-    justify-content: center; margin-left: 50px;
+    justify-content: center; margin-left: 200px;
 }
 .cardsProjectos img {
     width: 380px;
