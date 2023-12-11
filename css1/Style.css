@@ -9,142 +9,99 @@ body {
     background: #323232;
     color: #fefefe;
     font-weight: 400;
-    dis
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "section1 section2"
+    "footer footer";
+    grid-template-columns: 1fr 1fr; grid-template-rows: 100px 100% 40px;
 }
 
+/*grid*/
+.header {
+    display: grid;
+    grid-area:header;
+}
+#titulosHome {
+    display: grid;
+    grid-area: section1;
+}
+#items {
+    display: grid;
+    grid-area: section2;
+}
+.footer {
+    display: grid;
+    grid-area: footer;
+}
 /*header*/
-.headerHome {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #fefefe;
-    height: 85px;
-    margin: 14px 16px;
-    align-items: center; flex-wrap: nowrap;
+.header {
+    display:flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #fefefe; margin-bottom: 10px;flex-wrap: nowrap;
 }
-
-.headerHome .titulo h1 {
-    font-size: 22px;
-    font-weight: 700;
+.header .titulo h1 {
+    font-size: 22px; font-weight: 700; margin-left: 16px;
 }
-
-
-.headerHome .itemsNav li {
-    display: inline-block;
-    padding: 14px 16px;
-}
-
-.headerHome .itemsNav li img {
-    padding-right: 16px;
-}
-
 a {
-    text-decoration: none;
-    color: #fefefe;
-    list-style: none;
+    text-decoration: none; color: #fefefe; list-style: none;
 }
-
+.header .nav li{
+    padding: 16px; margin-right: 16px;
+}
 .contacto {
     background-color: #fefefe;
-    color: #323232;
     border: none;
     border-radius: 12px;
 }
-
 .contacto a {
     color: #323232;
 }
-
-/*section*/
-.sectionHome {
-    display: flex; align-items: center; justify-content: center;
-    height: 1fr;
-    width: 1fr;
-    margin: 0px 16px;
+.header .nav li img{
+    margin-right: 3px;
 }
-.sectionHome .article1 {
-    margin: 10px; margin-right: 100px;
+/*fin header*/
+/*section titulos*/
+#titulosHome { display: flex; flex-direction: column; align-items: center; justify-items: center
 }
-.sectionHome .article2 {
-    display: flex; flex-direction: column;
-    align-items: center; justify-content: center;
-    max-width: fit-content;
-    padding: 0px 30px;
+#titulosHome .article1 #cuadroBlanco {
+    padding: 16px; background-color: #fefefe; color: #323232; max-width: fit-content; border-radius: 12px; margin-bottom: 20px; margin-top: 20px;
 }
-.headerHome {
-    display: flex; align-items: center;
-}
-.sectionHome .article1 h1 {
-    font-size: 80px;
-    font-weight: 700;
-}
-
-.sectionHome .article1 p {
-    font-size: 34px;
-}
-
-.sectionHome .article1 .bgp {
-    color: #323232;
-    background-color: #fefefe;
-    border-radius: 12px;
-    padding: 14px 16px;
-    margin: 14px 16px;
-    font-size: 20px;
-    max-width: fit-content;
-    align-items: center;
-}
-
-.sectionHome .article1 .bgp img {
-    padding-right: 16px;
-}
-.sectionHome .article2 .fotoPorfolio {
-    padding-bottom: 10px;
-}
-.sectionHome .article2 .itemsArt li {
-    display: inline-block;
+#titulosHome .article1 #cuadroBlanco img {
     margin-right: 10px;
-    padding: 14px 14px;
-    background-color: #fefefe; border-radius: 12px;
-    text-align: center;
 }
-.sectionHome .article2 .itemsArt {
-    max-width: fit-content; padding-bottom: 10px;
+#titulosHome .article1 h1 {
+    font-size: 80px; font-weight: 700;
 }
-/*boton*/
-.sectionHome button { max-width: fit-content; max-height: 30px; background-color: none; border: 10px solid #fefefe; border-radius: 10px; 
-padding: 10px 10px;
+#titulosHome .article1 h3 {
+    font-size: 34px; font-weight: 500;
 }
-.sectionHome div button {
-    max-height: fit-content;
+/*fin titulos*/
+/*items home*/
+#itemsHome {
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
 }
-.sectionHome button a {
-    color: #323232; font-size: 14px;
-    text-align: center;
+.article2{
+    display: flex; flex-direction: column; align-items: center;
 }
-/*footer*/
-#footer {
-    background: #fefefe; color: #323232;
-    margin: 10px;
+#itemsHome .article2 .fotoPorfolio { display: flex;
+    width: 300px;
 }
-#footer a {
+#itemsHome .article2 .fotosRedes { display: flex; justify-content: space-between; list-style: none;
+}
+#itemsHome .article2 .fotosRedes .bg {
+    margin: 10px; padding: 16px; background-color: #fefefe; border-radius: 12px;
+}
+.botonHome {
+    padding: 12px; border-radius: 12px;
+}
+.botonHome a {
     color: #323232;
 }
-/*pagina projectos*/
-#Projectos {
-    display: flex; flex-direction: row; align-items: center;
+/*fin items home*/
+/*footer*/
+.footer {
+    background: #fefefe 
 }
-.tittle {
-    font-size: 80px; font-weight: 700; text-align: center; align-items: center;
+.footer a {
+    color: #323232;
 }
-.cardsProjectos {
-    display: flex; flex-direction: row;
-    justify-content: center; margin-left: 200px;
-}
-.cardsProjectos img {
-    width: 380px;
-}
-.primerRow {
-    margin: 10px 10px;
-}
-.segundoRow {
-    margin: 10px 10px;
-}
+

@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css1/Style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,59 +15,66 @@
 </head>
 
 <body>
-    <header class="headerHome">
+    <header class="header">
         <div class="titulo">
             <h1>Agustin Aquino</h1>
         </div>
+    
         <nav>
-            <ul class="itemsNav">
+            <ul class="nav">
                 <li><a href="/entregaAgustinAquino/index.html"><img src="imagenes1/Nav/home.png">Home</a></li>
                 <li><a href="./pages1/Projectos.html"><img src="imagenes1/Nav/Projectos.png">Projectos</a></li>
                 <li><a href="./pages1/Educacion.html"><img src="imagenes1/Nav/school.png">Educacion</a></li>
                 <li><a href="./pages1/Sobre-mi.html"><img src="imagenes1/Nav/account_circle.png">Sobre mi</a></li>
-                <li class="contacto"><a href="./pages1/Contacto.html"><img src="imagenes1/Nav/mail.png">Contacto</a></li>
+                <li class="contacto"><a href="./pages1/Contacto.html"><img src="imagenes1/Nav/mail.png">Contacto</a>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="sectionHome">
+        <section id="titulosHome">
             <article class="article1">
-                <p class="bgp"><img src="imagenes1/Home/Ellipse 3.png">Disponible para trabajar</p>
+                <div id="cuadroBlanco">
+                    <img src="imagenes1/Home/Ellipse 3.png"><span>Disponible para trabajar
+                    </span>
+                </div>
                 <h1>Diseñador UX/UI</h1>
                 <h3 class="textoArt1">
                     <p>Mi nombre es AGUSTIN AQUINO</p>
                     <p>Estudiante de Desarrollo Web</p>
                 </h3>
             </article>
-            <div>
-                <article class="article2"><img class="fotoPorfolio" src="imagenes1/Home/FotoPorfolio 2.png" alt="FotoPorfolio">
-                    <ul class="itemsArt">
-                        <li class="bg"><a href="https://web.whatsapp.com/" target="_blank">
-                                <img src="imagenes1/Home/whatsapp.png" alt="Logo whatsapp">
-                            </a></li>
-                        <li class="bg"><a href="https://www.behance.net/" target="_blank>">
-                                <img src="imagenes1/Home/behance.png" alt="Logo behance">
-                            </a></li>
-                        <li class="bg"><a href="https://dribbble.com/shots/popular" target="_blank">
-                                <img src="imagenes1/Home/dribbble.png" alt="Logo dribbble">
-                            </a></li>
-                        <li class="bg"><a href="https://ar.linkedin.com/" target="_blank">
-                                <img src="imagenes1/Home/linkedin.png" alt="Logo linkedin">
-                            </a></li>
-                        <li class="bg"><a href="https://es-la.facebook.com/" target="_blank">
-                                <img src="imagenes1/Home/Facebook.png" alt="Logo facebook">
-                            </a></li>
-                    </ul>
-                    <button type="button"><a href="pages1/Contacto.html">Enviame un Mail</a></button>
-            </div>
-            
-            </article>
-            <!--Boton-->
         </section>
     </main>
-    <footer id="footer">
-    <a href="https://plataforma.coderhouse.com/" target="_blank">CoderHouse</a></footer>
-    
+    <section id="itemsHome">
+        <article class="article2"><img class="fotoPorfolio" src="imagenes1/Home/FotoPorfolio 2.png" alt="FotoPorfolio">
+            <ul class="fotosRedes">
+                <li class="bg"><a href="https://web.whatsapp.com/" target="_blank">
+                        <img src="imagenes1/Home/whatsapp.png" alt="Logo whatsapp">
+                    </a></li>
+                <li class="bg"><a href="https://www.behance.net/" target="_blank>">
+                        <img src="imagenes1/Home/behance.png" alt="Logo behance">
+                    </a></li>
+                <li class="bg"><a href="https://dribbble.com/shots/popular" target="_blank">
+                        <img src="imagenes1/Home/dribbble.png" alt="Logo dribbble">
+                    </a></li>
+                <li class="bg"><a href="https://ar.linkedin.com/" target="_blank">
+                        <img src="imagenes1/Home/linkedin.png" alt="Logo linkedin">
+                    </a></li>
+                <li class="bg"><a href="https://es-la.facebook.com/" target="_blank">
+                        <img src="imagenes1/Home/Facebook.png" alt="Logo facebook">
+                    </a></li>
+            </ul>
+            <!--Boton-->
+            <button type="button" class="botonHome"><a href="pages1/Contacto.html">Enviame un Mail</a></button>
+        </article>
+
+    </section>
+
+    <footer class="footer">
+        <a href="https://plataforma.coderhouse.com/" target="_blank">CoderHouse</a>
+    </footer>
+
 </body>
 
 </html>
