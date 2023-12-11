@@ -1,10 +1,3 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-
-}
 body {
     background: #323232;
     color: #fefefe;
@@ -22,11 +15,11 @@ body {
     display: grid;
     grid-area:header;
 }
-.titulosHome {
+.titulosPages {
     display: grid;
     grid-area: section1;
 }
-.items {
+.projectos {
     display: grid;
     grid-area: section2;
 }
@@ -60,18 +53,18 @@ a {
 }
 /*fin header*/
 /*section titulos*/
-.titulosHome { display: flex; flex-direction: column; align-items: center; justify-items: center
+.titulosPages { display: flex; flex-direction: column; align-items: center; justify-items: center
 }
-.titulosHome .article1 #cuadroBlanco {
+.titulosPages .article1 #cuadroBlanco {
     padding: 16px; background-color: #fefefe; color: #323232; max-width: fit-content; border-radius: 12px; margin-bottom: 20px; margin-top: 20px;
 }
-.titulosHome .article1 #cuadroBlanco img {
+.titulosPages .article1 #cuadroBlanco img {
     margin-right: 10px;
 }
-.titulosHome .article1 h1 {
+.titulosPages .article1 h1 {
     font-size: 80px; font-weight: 700;
 }
-.titulosHome .article1 h3 {
+.titulosPages .article1 h3 {
     font-size: 34px; font-weight: 500;
 }
 /*fin titulos*/
@@ -105,51 +98,3 @@ a {
     color: #323232;
 }
 /*fin footer*/
-/*projectos*/
-/*grid*/
-.titulosPages {
-    display: grid; grid-area: section1;
-}
-.projectos {
-    display: grid;
-    grid-area: section2; 
-}
-/*section projectos*/
-.titulosPages {
-    display: grid; justify-items: center; align-items: center;
-}
-.titulosPages h1 {
-    font-size: 80px; font-weight: 700; margin-top: 16px;
-}
-.projectos .artProjectos {
-    display: flex; justify-content: center; align-content: center;
-}
-.projectos .artProjectos .primerRow { display: inline;
-max-width: fit-content;  
-}
-.projectos .artProjectos .segundoRow { display: inline;
-    max-width: fit-content; 
-}
-.projectos .artProjectos .primerRow .cuadro1{
-margin: 10px;
-}
-.projectos .artProjectos .primerRow .cuadro2{
-    margin: 10px;
-}
-.projectos .artProjectos .segundoRow .cuadro3{
-    margin: 10px;
-}
-.projectos .artProjectos .segundoRow .cuadro4{
-    margin: 10px;
-}
-
-
-.projectos .artProjectos .primerRow img {
-    width: 300px;
-}
-.projectos .artProjectos .segundoRow img {
-    width: 300px;
-}
-main {
-    display: flex; align-content: center; justify-content: center;
-}
