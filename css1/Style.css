@@ -126,3 +126,23 @@ padding: 10px 10px;
 #footer a {
     color: #323232;
 }
+/*pagina projectos*/
+#Projectos {
+    display: flex; flex-direction: row;
+}
+.tittle {
+    font-size: 80px; font-weight: 700; text-align: center; padding-top: 100px; justify-content: center;
+}
+.cardsProjectos {
+    display: flex; flex-direction: row;
+    justify-content: center; margin-left: 50px;
+}
+.cardsProjectos img {
+    width: 380px;
+}
+.primerRow {
+    margin: 10px 10px;
+}
+.segundoRow {
+    margin: 10px 10px;
+}
