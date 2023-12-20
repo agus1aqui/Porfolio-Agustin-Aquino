@@ -7,40 +7,41 @@
 }
 
 body {
-    background: #323232;
+    background: #121212;
     color: #fefefe;
     font-weight: 400;
     display: grid;
     grid-template-areas:
-        "header header"
-        "section1 section2"
+        "aside nav nav"
+        "aside section section"
         "footer footer";
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+
     grid-template-rows: 100px 100% 40px;
+    height: auto;
+    height: auto;
 }
+
 
 /*grid*/
-.header {
-    display: grid;
-    grid-area: header;
+
+
+.section {
+    display: grid; grid-area: section;
 }
 
-.titulosHome {
-    display: grid;
-    grid-area: section1;
+.footer{
+    display: grid; grid-area: footer;
 }
 
-.items {
-    display: grid;
-    grid-area: section2;
+/*nav*/
+.nav {
+    display: grid; justify-content: space-between; padding: 10px; background-color: #323232; grid-area: nav;
 }
-
-.footer {
+.aside{
     display: grid;
-    grid-area: footer;
+    grid-area: aside;
 }
-
-/*header*/
 .header {
     display: flex;
     justify-content: space-between;
