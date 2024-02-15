@@ -1,0 +1,148 @@
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #ebebeb; font-family: "Roboto", sans-serif;
+}
+
+
+/*navbar*/
+.nav {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navBrand {
+  display: flex;
+  align-items: center;
+}
+
+.navBrand h6 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.navList {
+  margin: 30px;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.listItem a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 10px;
+}
+
+/*section*/
+.section1Home .h1Name {
+  color: #E63582;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.section1Home .h1Description {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.section1Home div p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.button .verProyectos {
+  color: #ffffff;
+  background-color: #000000;
+  padding: 16px;
+  border-radius: 16px;
+  font-size: 20px;
+}
+
+.button .available {
+  color: #ffffff;
+  background: linear-gradient(90deg, #7334C0 0%, #E63582 100%);
+  padding: 16px;
+  border-radius: 16px;
+  font-size: 20px;
+}
+
+.section2Home .fotoPortfolio {
+  width: 380px;
+  height: 500px;
+}
+
+.toolsBox {
+  padding: 16px;
+  background-color: #ffffff;
+}
+
+.toolsBox h6 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.toolsList {
+  list-style: none;
+  display: flex;
+}
+
+.toolsItem {
+  height: 32px;
+  width: 32px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #ebebeb;
+  border-radius: 10px;
+}
+
+.mediaBox {
+  padding: 16px;
+  background-color: #ffffff;
+}
+
+.mediaBox h6 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.mediaList {
+  list-style: none;
+  display: flex;
+}
+
+.mediaItem {
+  height: 32px;
+  width: 32px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #ebebeb;
+  border-radius: 10px;
+}
