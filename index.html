@@ -13,67 +13,99 @@
 </head>
 
 <body>
-    <nav class="nav">
-        <div class="navBrand"><img src="./image/logo.png" />
-            <h6>Agustin Aquino</h6>
-        </div>
+    <aside>
+        <img class="mainPhoto" src="./image/aside/mainPhoto.svg" alt="Main photo">
+        <button class="contactMe"><span>Contact Me</span></button>
+        <ul class="asideList">
+            <li class="asideItem"><img class="imageAsideItem" src="./image/aside/school.png" /><span>CoderHouse</span>
+            </li>
+            <li class="asideItem"><img class="imageAsideItem"
+                    src="./image/aside/design_services.png" /><span>UI/UX</span></li>
+            <li class="asideItem"><img class="imageAsideItem" src="./image/aside/send.png" /><span>Argentina</span></li>
+            <li class="asideItem"><img class="imageAsideItem" src="./image/aside/translate.png" /><span>Eng / Esp</span>
+            </li>
+        </ul>
+        <div class="asideFooter"><img src="./image/aside/github.png" alt="Github" /><img
+                src="./image/aside/dribbble.png" alt="Dribbble" /><img src="./image/aside/behance-alt.png"
+                alt="Behance" /></div>
+    </aside>
+    <nav>
         <ul class="navList">
-            <li class="listItem"><a href="./index.html">Home</a></li>
-            <li class="listItem"><a href="./pages/sobreMi.html">Sobre Mi</a></li>
-            <li class="listItem"><a href="./pages/proyectos.html">Proyectos</a></li>
-            <li class="listItem"><a href="./pages/educacion.html">Educacion</a></li>
-            <li class="listItem"><a href="./pages/contacto.html">Contacto</a></li>
+            <li class="listItem" class="activeButton"><a href="./index.html">Home</a></li>
+            <li class="listItem"><a href="./pages/sobreMi.html">About Me</a></li>
+            <li class="listItem"><a href="./pages/proyectos.html">Projects</a></li>
+            <li class="listItem"><a href="./pages/educacion.html">Education</a></li>
         </ul>
     </nav>
-    <section class="section1Home">
-        <h1>
-            <div class="h1Name">Agustin Aquino</div>
-            <div class="h1Description">Diseño UX/UI</div>
-        </h1>
-        <div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempore ipsa accusamus beatae,
-                facere quasi itaque quibusdam ea ipsam quis dolore suscipit excepturi cum esse eligendi eos architecto
-                animi vitae.</p>
-        </div>
-        <div class="button">
-            <button class="verProyectos">Ver trabajos</button>
-            <button class="available">Disponible para trabajar</button>
-        </div>
-    </section>
-    <section class="section2Home">
-        <img class="fotoPortfolio " src="./image/foto1.png" alt="Foto Principal">
-        <div class="toolsBox">
-            <h6>Herramientas:</h6>
-            <ul class="toolsList">
-                <div>
-                    <li class="toolsItem"><img src="./image/tools/notion.png"></li>
-                    <li class="toolsItem"><img src="./image/tools/adobe_illustrator.png"></li>
-                    <li class="toolsItem"><img src="./image/tools/adobe_lightroom.png"></li>
+    <main>
+        <section>
+            <div class="mainTittle">
+                <h1>
+                    <p>Agustin Aquino</p>
+                </h1>
+                <h2>
+                    <p>Diseño UI/UX</p>
+                </h2>
+            </div>
+            <div class="introduction">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempore ipsa accusamus beatae,
+                    facere quasi itaque quibusdam ea ipsam quis dolore suscipit excepturi cum esse eligendi eos
+                    architecto
+                    animi vitae.</p>
+            </div>
+            <div class="buttons">
+                <button class="workStatusButton">Available to Work</button>
+                <button class="projectsButton">My projects</button>
+            </div>
+            <article class="boxes">
+                <div class="toolsBox">
+                    <div>
+                        <h3>Tools:</h3>
+                    </div>
+                    <ul class="networkandtoolList">
+                        <div class="separator">
+                            <li class="toolList"><img class="imgBoxes" src="./image/tools/notion.png" alt="Notion" />
+                            </li>
+                            <li class="toolList"><img class="imgBoxes" src="./image/tools/figma.png" alt="Figma" /></li>
+                            <li class="toolList"><img class="imgBoxes" src="./image/tools/adobe_illustrator.png"
+                                    alt="Adobe illustrator" />
+                            </li>
+                        </div>
+                        <div class="separator">
+                            <li class="toolList"><img src="./image/tools/adobe_xd.png" alt="Adobe xd" /></li>
+                            <li class="toolList"><img src="./image/tools/adobe_lightroom.png" alt="Adobe Lightroom" />
+                            </li>
+                            <li class="toolList"><img src="./image/tools/adobe_photoshop.png" alt="Adobe Photoshop" />
+                            </li>
+                        </div>
+                    </ul>
                 </div>
-                <div>
-                    <li class="toolsItem"><img src="./image/tools/adobe_photoshop.png" </li>
-                    <li class="toolsItem"><img src="./image/tools/adobe_xd.png"></li>
-                    <li class="toolsItem"><img src="./image/tools/figma.png"></li>
+                <div class="networksBox">
+                    <div>
+                        <h3>Netwoks:</h3>
+                    </div>
+                    <ul class="networkandtoolList">
+                        <div class="separator">
+                            <li class="networkList"><a href="https://github.com/agus1aqui/Porfolio-Agustin-Aquino"><img
+                                        src="./image/networks/github.png" alt="Github" /></a></li>
+                            <li class="networkList"><a href="https://www.linkedin.com/home"><img
+                                        src="./image/networks/linkedin.png" alt="Linkedin" /></a></li>
+                            <li class="networkList"><a href=""><img src="./image/networks/twitter.png"
+                                        alt="Twitter" /></a>
+                            </li>
+                        </div>
+                        <div class="separator" <li class="networkList"><a
+                                href="https://m.facebook.com/?locale=es_LA&wtsid=rdr_0uCy2mZGPy1pU9s91"><img
+                                    src="./image/networks/facebook-alt.png" alt="Facebook" /></a></li>
+                            <li class="networkList"><a href="https://www.behance.net/"><img
+                                        src="./image/networks/behance-alt.png" alt="Behance" /></a></li>
+                            <li class="networkList"><a href="https://dribbble.com/"><img
+                                        src="./image/networks/dribbble.png" alt="Dribbble" /></a></li>
+                    </ul>
                 </div>
-            </ul>
-        </div>
-        <div class="separator"></div>
-        <div class="mediaBox">
-            <h6>Redes:</h6>
-            <ul class="mediaList">
-                <div>
-                    <li class="mediaItem"><img src="./image/redes/github.png"></li>
-                    <li class="mediaItem"><img src="./image/redes/linkedin.png"></li>
-                    <li class="mediaItem"><img src="./image/redes/twitter.png"></li>
-                </div>
-                <div>
-                <li class="mediaItem"><img src="./image/redes/facebook-alt.png"></li>
-                <li class="mediaItem"><img src="./image/redes/behance-alt.png"></li>
-                <li class="mediaItem"><img src="./image/redes/dribbble.png"></li>
-                </div>
-            </ul>
-        </div>
-    </section>
+            </article>
+        </section>
+    </main>
     <footer>
         <p>Derechos Reservados</p>
     </footer>

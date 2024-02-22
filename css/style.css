@@ -22,30 +22,102 @@
 }
 
 body {
-  background: #ebebeb; font-family: "Roboto", sans-serif;
+  background: #F1F6F9;
+  font-family: "Roboto", sans-serif;
+  margin: 10px;
+  padding: auto;
 }
 
+/*grid*/
+body {
+  grid-template-area:
+    "aside  nav    nav"
+    "aside  main   main"
+    "footer footer footer";
+}
+
+aside {
+  grid-area;
+  aside
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/*aside*/
+aside {
+  /*flex*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*style*/
+  background-color: #394867;
+  color: #ffffff;
+  padding: 30px;
+  width: 500px;
+  border-radius: 40px;
+}
+
+aside .mainPhoto {
+  width: 300px;
+  height: 278px;
+}
+
+aside .contactMe {
+  padding: 20px;
+  background-color: #44ac95;
+  border-radius: 4px;
+  box-shadow: 0px -8px 0px 0px rgba(0, 0, 0, 0.50) inset;
+  color: #267267;
+  font-size: 30px;
+  font-weight: 700;
+  width: 100%;
+}
+
+aside .asideItem {
+  /*flex*/
+  display: flex;
+  align-items: center;
+  /*style*/
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #212A3E;
+  min-width: 100%;
+}
+
+aside .asideItem .imageAsideItem {
+  width: 80px;
+  height: 80px;
+  background-color: #394867;
+  border-radius: 1000px;
+}
+
+aside .asideFooter {
+  background-color: #212A3E;
+  width: 100%;
+}
 
 /*navbar*/
-.nav {
-  background-color: #000000;
+nav {
+  background-color: #394867;
   color: #ffffff;
   font-size: 30px;
   font-weight: 400;
   padding: 20px;
+  border-bottom-left-radius: 60px;
   display: flex;
   justify-content: space-around;
-}
-
-.navBrand {
-  display: flex;
-  align-items: center;
-}
-
-.navBrand h6 {
-  font-size: 32px;
-  font-weight: 500;
-  margin-left: 10px;
 }
 
 .navList {
@@ -61,21 +133,52 @@ body {
   margin: 10px;
 }
 
+nav .activeButton {
+  border-bottom: #44ac95;
+  color: #44ac95;
+}
+
 /*section*/
-.section1Home .h1Name {
-  color: #E63582;
+main {
+  background-color: #394867;
+  padding: 50px;
+}
+
+main .mainTittle {
+  margin-bottom: 50px;
+}
+
+main h1 {
+  color: #ffffff;
   font-size: 50px;
   font-weight: 700;
 }
 
-.section1Home .h1Description {
-  font-size: 50px;
-  font-weight: 500;
+main h2 {
+  color: #000000;
+  font-size: 42px;
+  font-weight: 700;
 }
 
-.section1Home div p {
+main .introduction {
   font-size: 20px;
-  font-weight: 400;
+  color: #ffffff;
+}
+
+main .workStatusButton {
+  background: linear-gradient(90deg, #212A3E 0%, #394867 100%);
+  padding: 16px;
+  border-radius: 16px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+main .projectsButton {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 16px;
+  border-radius: 16px;
+  font-size: 20px;
 }
 
 .button .verProyectos {
@@ -93,16 +196,51 @@ body {
   border-radius: 16px;
   font-size: 20px;
 }
+.buttons {margin: 20px;}
 
-.section2Home .fotoPortfolio {
-  width: 380px;
-  height: 500px;
+/*article*/
+main .boxes {
+  padding: 10px;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-evenly; 
 }
 
-.toolsBox {
+main .toolsBox {
+  background-color: #212A3E;
   padding: 16px;
-  background-color: #ffffff;
+  border-radius: 20px;
 }
+
+main .networkandtoolList img {
+  padding: 10px;
+  margin: 10px;
+  background-color: #394867;
+  border-radius: 10px;
+}
+
+main .networksBox {
+  background-color: #212A3E;
+  padding: 16px;
+  border-radius: 20px;
+} 
+
+main .networkandtoolList {
+  list-style: none;
+}
+
+main .separator {
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
 
 .toolsBox h6 {
   font-size: 20px;
@@ -123,6 +261,8 @@ body {
   border-radius: 10px;
 }
 
+
+
 .mediaBox {
   padding: 16px;
   background-color: #ffffff;
@@ -133,10 +273,6 @@ body {
   font-weight: 500;
 }
 
-.mediaList {
-  list-style: none;
-  display: flex;
-}
 
 .mediaItem {
   height: 32px;
