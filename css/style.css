@@ -26,6 +26,7 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 10px;
   padding: auto;
+  color: #ffffff;
 }
 
 /*grid*/
@@ -233,52 +234,5 @@ main .separator {
   display: flex;
 }
 
+/*about me*/
 
-
-
-
-
-
-
-
-
-.toolsBox h6 {
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.toolsList {
-  list-style: none;
-  display: flex;
-}
-
-.toolsItem {
-  height: 32px;
-  width: 32px;
-  margin: 10px;
-  padding: 10px;
-  background-color: #ebebeb;
-  border-radius: 10px;
-}
-
-
-
-.mediaBox {
-  padding: 16px;
-  background-color: #ffffff;
-}
-
-.mediaBox h6 {
-  font-size: 20px;
-  font-weight: 500;
-}
-
-
-.mediaItem {
-  height: 32px;
-  width: 32px;
-  margin: 10px;
-  padding: 10px;
-  background-color: #ebebeb;
-  border-radius: 10px;
-}

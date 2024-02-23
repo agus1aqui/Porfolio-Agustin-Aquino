@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -13,58 +13,74 @@
 </head>
 
 <body>
-    <nav class="nav">
-        <h6 class="navBrand"><img src=""></h6>
+    <aside>
+        <img class="mainPhoto" src="../image/aside/mainPhoto.svg" alt="Main photo">
+        <button class="contactMe"><span>Contact Me</span></button>
+        <ul class="asideList">
+            <li class="asideItem"><img class="imageAsideItem" src="../image/aside/school.png" /><span>CoderHouse</span>
+            </li>
+            <li class="asideItem"><img class="imageAsideItem"
+                    src="../image/aside/design_services.png" /><span>UI/UX</span></li>
+            <li class="asideItem"><img class="imageAsideItem" src="../image/aside/send.png" /><span>Argentina</span>
+            </li>
+            <li class="asideItem"><img class="imageAsideItem" src="../image/aside/translate.png" /><span>Eng /
+                    Esp</span>
+            </li>
+        </ul>
+        <div class="asideFooter"><img src="../image/aside/github.png" alt="Github" /><img
+                src="../image/aside/dribbble.png" alt="Dribbble" /><img src="../image/aside/behance-alt.png"
+                alt="Behance" /></div>
+    </aside>
+    <nav>
         <ul class="navList">
-            <li class="listItem"><a href="../index.html">Home</a></li>
-            <li class="listItem"><a href="../pages/sobreMi.html">Sobre Mi</a></li>
-            <li class="listItem"><a href="../pages/proyectos.html">Proyectos</a></li>
-            <li class="listItem"><a href="../pages/educacion.html">Educacion</a></li>
-            <li class="listItem"><a href="../pages/contacto.html">Contacto</a></li>
+            <li class="listItem" class="activeButton"><a href="../index.html">Home</a></li>
+            <li class="listItem"><a href="./sobreMi.html">About Me</a></li>
+            <li class="listItem"><a href="./proyectos.html">Projects</a></li>
+            <li class="listItem"><a href="./educacion.html">Education</a></li>
         </ul>
     </nav>
-    <section class="section1Aboutme">
-        <h1>Sobre Mi</h1>
-        <div>
-            <p>¡Hola! Soy Agustin, un apasionado en UX/UI desing, desarrollador web.. Mi viaje en el mundo digital se
+    <main>
+        <article class="section1Aboutme">
+            <h1>Sobre Mi</h1>
+            <p>¡Hola! Soy Agustin, un apasionado en UX/UI desing, desarrollador web.. Mi viaje en el mundo digital
+                se
                 centra en la creación de Wiframes y Desing Systems . Aunque mi experiencia profesional está en sus
                 primeras etapas, mi entusiasmo por aprender y mi compromiso con la excelencia me impulsan a superar
                 cualquier desafío.</p>
-            <p class="sign">Agustin Aquino</p>
-        </div>
-        <div class="separator"></div>
-        <div class="qr"><img src=""></div>
-        <ul class="infoList">
-            <li class="listItem">Agustin123@gmail.com</li>
-            <li class="listItem">+1 23 4567-8901</li>
-            <li class="listItem">CABA, Argentina</li>
-            <li class="listItem">www.Blog.com</li>
-        </ul>
-    </section>
-    <section class="section2Aboutme">
-        <h3>Hobbies/Temas de interes</h3>
-        <ul class="hobbieList">
-            <div>
-                <li class="hobbieBox">
-                    <h6>Fotografia</h6>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, unde.</p>
-                </li>
-                <li class="hobbieBox">
-                    <h6>Web Development</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, excepturi!</p>
-                </li>
-                <li class="hobbiebox">
-                    <h6>Mobile Apps</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, praesentium?</p>
-                </li>
-                <li class="hobbieBox">
-                    <h6>Web Desing</h6>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, soluta!</p>
-                </li>
-        </ul>
-    </section>
+            <div class="separator"></div>
+            <div class="qr"><img src=""></div>
+            <ul class="infoList">
+                <li class="listItem">Agustin123@gmail.com</li>
+                <li class="listItem">+1 23 4567-8901</li>
+                <li class="listItem">CABA, Argentina</li>
+                <li class="listItem">www.Blog.com</li>
+            </ul>
+            <h3>Hobbies/Temas de interes</h3>
+            <ul class="hobbieList">
+                <div>
+                    <li class="hobbieBox">
+                        <h6>Fotografia</h6>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, unde.</p>
+                    </li>
+                    <li class="hobbieBox">
+                        <h6>Web Development</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, excepturi!</p>
+                    </li>
+                    <li class="hobbiebox">
+                        <h6>Mobile Apps</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, praesentium?</p>
+                    </li>
+                    <li class="hobbieBox">
+                        <h6>Web Desing</h6>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, soluta!</p>
+                    </li>
+            </ul>
+        </article>
+    </main>
+
     <footer>
         <p>Derechos Reservados</p>
     </footer>
 </body>
+
 </html>
