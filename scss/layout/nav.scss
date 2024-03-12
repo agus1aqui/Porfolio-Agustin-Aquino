@@ -1,0 +1,35 @@
+nav {
+    grid-area: nav;
+}
+
+nav {
+    background-color: #394867;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 20px;
+    border-bottom-left-radius: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .navList {
+        margin: 30px;
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+
+        .listItem a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+    }
+    .activeButton {
+        border-bottom: #44ac95;
+        color: #44ac95;
+    }
+    
+
+}

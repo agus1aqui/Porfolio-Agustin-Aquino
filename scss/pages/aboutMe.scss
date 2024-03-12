@@ -1,0 +1,62 @@
+//aside
+@import "../layout/aside.scss";
+//nav
+@import "../layout/nav.scss";
+
+body {
+    background: #F1F6F9;
+    font-family: "Roboto", sans-serif;
+    margin: 10px;
+    padding: auto;
+    color: #ffffff;
+}
+
+main {
+    grid-area: main;
+}
+
+main {
+    background-color: #394867;
+    padding: 40px;
+    border-radius: 40px;
+
+    section {
+        .mainTittle {
+            margin-bottom: 50px;
+
+            h1 {
+                color: #F1F6F9;
+                font-size: 50px;
+                font-weight: 700;
+            }
+        }
+    }
+    .hobbieList {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+    .hobbieBox {
+        background-color: #ffffff;
+        padding: 16px;
+        color: #000000;
+        margin: 10px;
+        border-radius: 20px;
+        height: 300px;
+        width: 500px;
+    
+    }
+    .absolute {
+        position: relative;
+        bottom: -10px;
+        border-radius: 1000px;
+        background: url(<path-to-image>), lightgray 1.728px -259.542px / 100% 150% no-repeat;
+        z-index: -1000;
+    }
+    h3 {
+        font-size: 26px;
+    }
+    h6 {
+        font-size: 20px;
+    }
+}

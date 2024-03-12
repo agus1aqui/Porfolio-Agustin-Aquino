@@ -1,0 +1,62 @@
+//aside
+@import "../layout/aside.scss";
+//nav
+@import "../layout/nav.scss";
+
+body {
+    background: #F1F6F9;
+    font-family: "Roboto", sans-serif;
+    margin: 10px;
+    padding: auto;
+    color: #ffffff;
+}
+
+main {
+    grid-area: main;
+}
+
+main {
+    background-color: #394867;
+    padding: 40px;
+    border-radius: 40px;
+
+    section {
+        .mainTittle {
+            margin-bottom: 50px;
+
+            h1 {
+                color: #F1F6F9;
+                font-size: 50px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .filterList {
+        display: flex;
+        list-style: none;
+        background-color: #212A3E;
+        max-width: fit-content;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        margin-top: 10px;
+
+        .filterItem {
+            margin: 10px;
+        }
+
+        .filterItemActive {
+            margin: 10px;
+            color: #267267;
+        }
+    }
+
+    .projectList {
+        display: flex;
+        list-style: none;
+
+        .projectItem {
+            margin: 10px;
+        }
+    }
+}

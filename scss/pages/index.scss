@@ -1,0 +1,128 @@
+//aside
+@import "../layout/aside.scss";
+//nav
+@import "../layout/nav.scss";
+
+body {
+    background: #F1F6F9;
+    font-family: "Roboto", sans-serif;
+    margin: 10px;
+    padding: auto;
+    color: #ffffff;
+}
+
+main {
+    grid-area: main;
+}
+
+main {
+    background-color: #394867;
+    padding: 40px;
+    border-radius: 40px;
+
+    section {
+        .mainTittle {
+            margin-bottom: 50px;
+
+            h1 {
+                color: #F1F6F9;
+                font-size: 50px;
+                font-weight: 700;
+            }
+
+            h2 {
+                color: #FFFFFF;
+                font-size: 42px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    section .introduction {
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    .workStatusButton {
+        background: linear-gradient(90deg, #212A3E 0%, #394867 100%);
+        padding: 16px;
+        border-radius: 16px;
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    .projectsButton {
+        background-color: #000000;
+        color: #ffffff;
+        padding: 16px;
+        border-radius: 16px;
+        font-size: 20px;
+    }
+
+    .button .verProyectos {
+        color: #ffffff;
+        background-color: #000000;
+        padding: 16px;
+        border-radius: 16px;
+        font-size: 20px;
+    }
+
+    .button .available {
+        color: #ffffff;
+        background: linear-gradient(90deg, #7334C0 0%, #E63582 100%);
+        padding: 16px;
+        border-radius: 16px;
+        font-size: 20px;
+    }
+
+    .buttons {
+        margin: 20px;
+    }
+
+    .boxes {
+        padding: 10px;
+        color: #ffffff;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .toolsBox {
+        background-color: #212A3E;
+        padding: 16px;
+        border-radius: 20px;
+    }
+
+    .networkandtoolList {
+        list-style: none;
+
+
+        img {
+            padding: 10px;
+            margin: 10px;
+            background-color: #394867;
+            border-radius: 10px;
+        }
+
+
+    }
+
+    .networksBox {
+        background-color: #212A3E;
+        padding: 16px;
+        border-radius: 20px;
+    }
+
+    .separator {
+        display: flex;
+    }
+
+
+
+    .workStatusButton {
+        background: linear-gradient(90deg, #212A3E 0%, #394867 100%);
+        padding: 16px;
+        border-radius: 16px;
+        font-size: 20px;
+        color: #ffffff;
+    }
+}
