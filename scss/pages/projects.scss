@@ -3,13 +3,7 @@
 //nav
 @import "../layout/nav.scss";
 
-body {
-    background: #F1F6F9;
-    font-family: "Roboto", sans-serif;
-    margin: 10px;
-    padding: auto;
-    color: #ffffff;
-}
+
 
 main {
     grid-area: main;
@@ -35,6 +29,7 @@ main {
     .filterList {
         display: flex;
         list-style: none;
+        flex-direction: column;
         background-color: #212A3E;
         max-width: fit-content;
         border-radius: 10px;
@@ -54,6 +49,7 @@ main {
     .projectList {
         display: flex;
         list-style: none;
+        flex-direction: column;
 
         .projectItem {
             margin: 10px;

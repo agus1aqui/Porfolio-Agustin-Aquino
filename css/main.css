@@ -19,6 +19,14 @@
   font-style: normal;
 }
 
+.caveat-text {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -31,8 +39,7 @@ body {
   grid-template-rows: 60px, auto, 10%;
   column-gap: 20px;
   row-gap: 10px;
-  grid-template-areas: "aside nav nav" "aside main main" "footer footer footer";
-  width: 100%;
+  grid-template-areas: "aside nav" "aside main" "footer footer";
 }
 
 main {
@@ -101,6 +108,14 @@ main {
     font-size: 20px;
   }
 }
+body {
+  background: #1C1C25;
+  font-family: "Roboto", sans-serif;
+  margin: 10px;
+  padding: auto;
+  color: #F1F6F9;
+}
+
 aside {
   grid-area: aside;
 }
@@ -111,18 +126,18 @@ aside {
   align-items: center;
   /*style*/
   background-color: #394867;
-  color: #ffffff;
+  color: #F1F6F9;
   padding: 30px;
   width: 350px;
   border-radius: 40px;
 }
 aside .mainPhoto {
-  width: 300px;
-  height: 278px;
+  width: 250px;
+  height: 250px;
 }
 aside .contactMe {
   padding: 20px;
-  background-color: #44ac95;
+  background-color: #44AC95;
   border-radius: 4px;
   box-shadow: 0px -8px 0px 0px rgba(0, 0, 0, 0.5) inset;
   color: #267267;
@@ -130,9 +145,13 @@ aside .contactMe {
   font-weight: 700;
   width: 100%;
 }
-aside .contactMe .contactMe a {
+aside .contactMe a {
   color: #267267;
   text-decoration: none;
+}
+aside .asideList {
+  min-width: 100%;
+  margin-top: 10px;
 }
 aside .asideItem {
   /*flex*/
@@ -141,24 +160,30 @@ aside .asideItem {
   /*style*/
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   background-color: #212A3E;
-  min-width: 100%;
 }
-aside .asideItem .asideItem .imageAsideItem {
-  width: 80px;
-  height: 80px;
+aside .asideItem .imageAsideItem {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
   background-color: #394867;
   border-radius: 1000px;
   margin-right: 20px;
 }
 aside .asideFooter {
   display: flex;
-  background-color: #212A3E;
   width: 100%;
   justify-content: center;
+  margin: 10px;
+  list-style: none;
+}
+aside .asideFooter img {
+  margin: 10PX;
   padding: 20px;
+  border-radius: 20px;
+  background-color: #212A3E;
 }
 
 nav {
@@ -197,7 +222,7 @@ footer {
 }
 
 footer {
-  color: #000000;
+  color: #F1F6F9;
 }
 
 aside {
@@ -210,18 +235,18 @@ aside {
   align-items: center;
   /*style*/
   background-color: #394867;
-  color: #ffffff;
+  color: #F1F6F9;
   padding: 30px;
   width: 350px;
   border-radius: 40px;
 }
 aside .mainPhoto {
-  width: 300px;
-  height: 278px;
+  width: 250px;
+  height: 250px;
 }
 aside .contactMe {
   padding: 20px;
-  background-color: #44ac95;
+  background-color: #44AC95;
   border-radius: 4px;
   box-shadow: 0px -8px 0px 0px rgba(0, 0, 0, 0.5) inset;
   color: #267267;
@@ -229,9 +254,13 @@ aside .contactMe {
   font-weight: 700;
   width: 100%;
 }
-aside .contactMe .contactMe a {
+aside .contactMe a {
   color: #267267;
   text-decoration: none;
+}
+aside .asideList {
+  min-width: 100%;
+  margin-top: 10px;
 }
 aside .asideItem {
   /*flex*/
@@ -240,24 +269,30 @@ aside .asideItem {
   /*style*/
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   background-color: #212A3E;
-  min-width: 100%;
 }
-aside .asideItem .asideItem .imageAsideItem {
-  width: 80px;
-  height: 80px;
+aside .asideItem .imageAsideItem {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
   background-color: #394867;
   border-radius: 1000px;
   margin-right: 20px;
 }
 aside .asideFooter {
   display: flex;
-  background-color: #212A3E;
   width: 100%;
   justify-content: center;
+  margin: 10px;
+  list-style: none;
+}
+aside .asideFooter img {
+  margin: 10PX;
   padding: 20px;
+  border-radius: 20px;
+  background-color: #212A3E;
 }
 
 nav {
@@ -289,14 +324,6 @@ nav .navList .listItem a {
 nav .activeButton {
   border-bottom: #44ac95;
   color: #44ac95;
-}
-
-body {
-  background: #F1F6F9;
-  font-family: "Roboto", sans-serif;
-  margin: 10px;
-  padding: auto;
-  color: #ffffff;
 }
 
 main {
@@ -402,18 +429,18 @@ aside {
   align-items: center;
   /*style*/
   background-color: #394867;
-  color: #ffffff;
+  color: #F1F6F9;
   padding: 30px;
   width: 350px;
   border-radius: 40px;
 }
 aside .mainPhoto {
-  width: 300px;
-  height: 278px;
+  width: 250px;
+  height: 250px;
 }
 aside .contactMe {
   padding: 20px;
-  background-color: #44ac95;
+  background-color: #44AC95;
   border-radius: 4px;
   box-shadow: 0px -8px 0px 0px rgba(0, 0, 0, 0.5) inset;
   color: #267267;
@@ -421,9 +448,13 @@ aside .contactMe {
   font-weight: 700;
   width: 100%;
 }
-aside .contactMe .contactMe a {
+aside .contactMe a {
   color: #267267;
   text-decoration: none;
+}
+aside .asideList {
+  min-width: 100%;
+  margin-top: 10px;
 }
 aside .asideItem {
   /*flex*/
@@ -432,24 +463,30 @@ aside .asideItem {
   /*style*/
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   background-color: #212A3E;
-  min-width: 100%;
 }
-aside .asideItem .asideItem .imageAsideItem {
-  width: 80px;
-  height: 80px;
+aside .asideItem .imageAsideItem {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
   background-color: #394867;
   border-radius: 1000px;
   margin-right: 20px;
 }
 aside .asideFooter {
   display: flex;
-  background-color: #212A3E;
   width: 100%;
   justify-content: center;
+  margin: 10px;
+  list-style: none;
+}
+aside .asideFooter img {
+  margin: 10PX;
   padding: 20px;
+  border-radius: 20px;
+  background-color: #212A3E;
 }
 
 nav {
@@ -481,14 +518,6 @@ nav .navList .listItem a {
 nav .activeButton {
   border-bottom: #44ac95;
   color: #44ac95;
-}
-
-body {
-  background: #F1F6F9;
-  font-family: "Roboto", sans-serif;
-  margin: 10px;
-  padding: auto;
-  color: #ffffff;
 }
 
 main {
@@ -546,18 +575,18 @@ aside {
   align-items: center;
   /*style*/
   background-color: #394867;
-  color: #ffffff;
+  color: #F1F6F9;
   padding: 30px;
   width: 350px;
   border-radius: 40px;
 }
 aside .mainPhoto {
-  width: 300px;
-  height: 278px;
+  width: 250px;
+  height: 250px;
 }
 aside .contactMe {
   padding: 20px;
-  background-color: #44ac95;
+  background-color: #44AC95;
   border-radius: 4px;
   box-shadow: 0px -8px 0px 0px rgba(0, 0, 0, 0.5) inset;
   color: #267267;
@@ -565,9 +594,13 @@ aside .contactMe {
   font-weight: 700;
   width: 100%;
 }
-aside .contactMe .contactMe a {
+aside .contactMe a {
   color: #267267;
   text-decoration: none;
+}
+aside .asideList {
+  min-width: 100%;
+  margin-top: 10px;
 }
 aside .asideItem {
   /*flex*/
@@ -576,24 +609,30 @@ aside .asideItem {
   /*style*/
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   background-color: #212A3E;
-  min-width: 100%;
 }
-aside .asideItem .asideItem .imageAsideItem {
-  width: 80px;
-  height: 80px;
+aside .asideItem .imageAsideItem {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
   background-color: #394867;
   border-radius: 1000px;
   margin-right: 20px;
 }
 aside .asideFooter {
   display: flex;
-  background-color: #212A3E;
   width: 100%;
   justify-content: center;
+  margin: 10px;
+  list-style: none;
+}
+aside .asideFooter img {
+  margin: 10PX;
   padding: 20px;
+  border-radius: 20px;
+  background-color: #212A3E;
 }
 
 nav {
@@ -625,14 +664,6 @@ nav .navList .listItem a {
 nav .activeButton {
   border-bottom: #44ac95;
   color: #44ac95;
-}
-
-body {
-  background: #F1F6F9;
-  font-family: "Roboto", sans-serif;
-  margin: 10px;
-  padding: auto;
-  color: #ffffff;
 }
 
 main {
@@ -670,18 +701,18 @@ aside {
   align-items: center;
   /*style*/
   background-color: #394867;
-  color: #ffffff;
+  color: #F1F6F9;
   padding: 30px;
   width: 350px;
   border-radius: 40px;
 }
 aside .mainPhoto {
-  width: 300px;
-  height: 278px;
+  width: 250px;
+  height: 250px;
 }
 aside .contactMe {
   padding: 20px;
-  background-color: #44ac95;
+  background-color: #44AC95;
   border-radius: 4px;
   box-shadow: 0px -8px 0px 0px rgba(0, 0, 0, 0.5) inset;
   color: #267267;
@@ -689,9 +720,13 @@ aside .contactMe {
   font-weight: 700;
   width: 100%;
 }
-aside .contactMe .contactMe a {
+aside .contactMe a {
   color: #267267;
   text-decoration: none;
+}
+aside .asideList {
+  min-width: 100%;
+  margin-top: 10px;
 }
 aside .asideItem {
   /*flex*/
@@ -700,24 +735,30 @@ aside .asideItem {
   /*style*/
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   background-color: #212A3E;
-  min-width: 100%;
 }
-aside .asideItem .asideItem .imageAsideItem {
-  width: 80px;
-  height: 80px;
+aside .asideItem .imageAsideItem {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
   background-color: #394867;
   border-radius: 1000px;
   margin-right: 20px;
 }
 aside .asideFooter {
   display: flex;
-  background-color: #212A3E;
   width: 100%;
   justify-content: center;
+  margin: 10px;
+  list-style: none;
+}
+aside .asideFooter img {
+  margin: 10PX;
   padding: 20px;
+  border-radius: 20px;
+  background-color: #212A3E;
 }
 
 nav {
@@ -749,14 +790,6 @@ nav .navList .listItem a {
 nav .activeButton {
   border-bottom: #44ac95;
   color: #44ac95;
-}
-
-body {
-  background: #F1F6F9;
-  font-family: "Roboto", sans-serif;
-  margin: 10px;
-  padding: auto;
-  color: #ffffff;
 }
 
 main {
@@ -779,6 +812,7 @@ main section .mainTittle h1 {
 main .filterList {
   display: flex;
   list-style: none;
+  flex-direction: column;
   background-color: #212A3E;
   max-width: fit-content;
   border-radius: 10px;
@@ -795,6 +829,7 @@ main .filterList .filterItemActive {
 main .projectList {
   display: flex;
   list-style: none;
+  flex-direction: column;
 }
 main .projectList .projectItem {
   margin: 10px;
@@ -810,18 +845,18 @@ aside {
   align-items: center;
   /*style*/
   background-color: #394867;
-  color: #ffffff;
+  color: #F1F6F9;
   padding: 30px;
   width: 350px;
   border-radius: 40px;
 }
 aside .mainPhoto {
-  width: 300px;
-  height: 278px;
+  width: 250px;
+  height: 250px;
 }
 aside .contactMe {
   padding: 20px;
-  background-color: #44ac95;
+  background-color: #44AC95;
   border-radius: 4px;
   box-shadow: 0px -8px 0px 0px rgba(0, 0, 0, 0.5) inset;
   color: #267267;
@@ -829,9 +864,13 @@ aside .contactMe {
   font-weight: 700;
   width: 100%;
 }
-aside .contactMe .contactMe a {
+aside .contactMe a {
   color: #267267;
   text-decoration: none;
+}
+aside .asideList {
+  min-width: 100%;
+  margin-top: 10px;
 }
 aside .asideItem {
   /*flex*/
@@ -840,24 +879,30 @@ aside .asideItem {
   /*style*/
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   background-color: #212A3E;
-  min-width: 100%;
 }
-aside .asideItem .asideItem .imageAsideItem {
-  width: 80px;
-  height: 80px;
+aside .asideItem .imageAsideItem {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
   background-color: #394867;
   border-radius: 1000px;
   margin-right: 20px;
 }
 aside .asideFooter {
   display: flex;
-  background-color: #212A3E;
   width: 100%;
   justify-content: center;
+  margin: 10px;
+  list-style: none;
+}
+aside .asideFooter img {
+  margin: 10PX;
   padding: 20px;
+  border-radius: 20px;
+  background-color: #212A3E;
 }
 
 nav {
@@ -889,14 +934,6 @@ nav .navList .listItem a {
 nav .activeButton {
   border-bottom: #44ac95;
   color: #44ac95;
-}
-
-body {
-  background: #F1F6F9;
-  font-family: "Roboto", sans-serif;
-  margin: 10px;
-  padding: auto;
-  color: #ffffff;
 }
 
 main {

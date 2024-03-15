@@ -2,19 +2,9 @@
 @import "../layout/aside.scss";
 //nav
 @import "../layout/nav.scss";
-
-body {
-    background: #F1F6F9;
-    font-family: "Roboto", sans-serif;
-    margin: 10px;
-    padding: auto;
-    color: #ffffff;
-}
-
 main {
     grid-area: main;
 }
-
 main {
     background-color: #394867;
     padding: 40px;

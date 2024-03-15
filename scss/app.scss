@@ -1,21 +1,17 @@
 /*general*/
 @import "../scss/general/variables.scss";
 @import "../scss/general/reset.scss";
-
 //grid
 @import "../scss/layout/grid.scss";
-
+//body
+@import "../scss/layout/body.scss";
 //aside
 @import "../scss/layout/aside.scss";
-
 //nav
 @import "../scss/layout/nav.scss";
-
 //footer
 @import "../scss/layout/footer.scss";
-
 //pages
-
 //index
 @import "../scss/pages/index.scss";
 //about me

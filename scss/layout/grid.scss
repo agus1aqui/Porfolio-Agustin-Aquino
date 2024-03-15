@@ -5,10 +5,9 @@ body {
     column-gap: 20px;
     row-gap: 10px;
     grid-template-areas:
-        "aside nav nav"
-        "aside main main"
-        "footer footer footer";
-    width: 100%;
+        "aside nav"
+        "aside main"
+        "footer footer";
 }
 
 main {
