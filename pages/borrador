@@ -1,0 +1,55 @@
+ <article class="boxes">
+                <div class="toolsBox">
+                    <div>
+                        <h3>Tools:</h3>
+                    </div>
+                    <ul class="networkandtoolList">
+                        <div class="separator">
+                            <li class="toolList"><img class="imgBoxes" src="./image/tools/notion.png" alt="Notion" />
+                            </li>
+                            <li class="toolList"><img class="imgBoxes" src="./image/tools/figma.png" alt="Figma" /></li>
+                            <li class="toolList"><img class="imgBoxes" src="./image/tools/adobe_illustrator.png"
+                                    alt="Adobe illustrator" />
+                            </li>
+                        </div>
+                        <div class="separator">
+                            <li class="toolList"><img src="./image/tools/adobe_xd.png" alt="Adobe xd" /></li>
+                            <li class="toolList"><img src="./image/tools/adobe_lightroom.png" alt="Adobe Lightroom" />
+                            </li>
+                            <li class="toolList"><img src="./image/tools/adobe_photoshop.png" alt="Adobe Photoshop" />
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="networksBox">
+                    <div>
+                        <h3>Netwoks:</h3>
+                    </div>
+                    <ul class="networkandtoolList">
+                        <div class="separator">
+                            <li class="networkList"><a href="https://github.com/agus1aqui/Porfolio-Agustin-Aquino"><img
+                                        src="./image/networks/github.png" alt="Github" /></a></li>
+                            <li class="networkList"><a href=""><img src="./image/networks/linkedin.png"
+                                        alt="Linkedin" /></a></li>
+                            <li class="networkList"><a href=""><img src="./image/networks/twitter.png"
+                                        alt="Twitter" /></a>
+                            </li>
+                        </div>
+                        <div class="separator" </div>
+                            <li class="networkList"><a href=""><img src="./image/networks/facebook-alt.png"
+                                        alt="Facebook" /></a></li>
+                            <li class="networkList"><a href="https://www.behance.net/"><img
+                                        src="./image/networks/behance-alt.png" alt="Behance" /></a></li>
+                            <li class="networkList"><a href="https://dribbble.com/"><img
+                                        src="./image/networks/dribbble.png" alt="Dribbble" /></a></li>
+                    </ul>
+                </div>
+            </article>
+
+
+
+            
+            <li class="listItem">Agustin123@gmail.com</li>
+                <li class="listItem">+1 23 4567-8901</li>
+                <li class="listItem">CABA, Argentina</li>
+                <li class="listItem">www.Blog.com</li>

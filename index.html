@@ -18,18 +18,24 @@
 
 <body>
     <aside>
+        <div>
         <img class="mainPhoto" src="./image/aside/mainPhoto.svg" alt="Main photo">
         <button class="contactMe"><a href="./pages/contact.html">Contact Me</a></button>
+        </div>
         <ul class="asideList">
+            <div class="size">
             <li class="asideItem"><img class="imageAsideItem" src="./image/aside/school.png" /><span>CoderHouse</span>
             </li>
             <li class="asideItem"><img class="imageAsideItem"
                     src="./image/aside/design_services.png" /><span>UI/UX</span></li>
+            </div>
+            <div class="size">
             <li class="asideItem"><img class="imageAsideItem" src="./image/aside/send.png" /><span>Argentina</span></li>
             <li class="asideItem"><img class="imageAsideItem" src="./image/aside/translate.png" /><span>Eng / Esp</span>
             </li>
+            </div>
         </ul>
-        <div>
+        <div class="absolute">
             <ul class="asideFooter">
                 <li class="asideFooterItem"><img src="./image/aside/github.png" alt="Github"></li>
                 <li class="asideFooterItem"><img src="./image/aside/dribbble.png" alt="Dribble"></li>
@@ -37,97 +43,92 @@
             </ul>
         </div>
     </aside>
-    <nav>
+    <header>
         <ul class="navList">
-            <li class="listItem" class="activeButton"><a href="./index.html">Home</a></li>
-            <li class="listItem"><a href="./pages/aboutMe.html">About Me</a></li>
-            <li class="listItem"><a href="./pages/projects.html">Projects</a></li>
-            <li class="listItem"><a href="./pages/education.html">Education</a></li>
+            <li class="listItem"><a class="activeNav" href="./index.html">Home</a></li>
+            <li class="listItem"><a class="activeNav" href="./pages/aboutMe.html">About Me</a></li>
+            <li class="listItem"><a class="activeNav" href="./pages/projects.html">Projects</a></li>
+            <li class="listItem"><a class="activeNav" href="./pages/education.html">Education</a></li>
         </ul>
-    </nav>
+    </header>
     <main>
-        <section>
-            <div class="mainTittle">
-                <h1>
-                    <p>Agustin Aquino</p>
-                </h1>
-                <h2>
-                    <p>Diseño UI/UX</p>
-                </h2>
-                <p class="caveat-text">I desing things.</p>
-            </div>
+        <section class="home">
+            <h1>
+                <p>Agustin Aquino</p>
+            </h1>
+            <h2>
+                <p>Diseño UI/UX </p>
+            </h2>
+            <p class="caveat-text">I desing things.</p>
+
             <article class="profile">
-                <div>
+                <div class="text">
                     <p>
-                        I'm Agustin, a designer from Argentina. As a student, I did a lot of graphic desing work, so I thought dabble at frontend dev would be fun!
+                        I'm Agustin, a designer from Argentina. As a student, I did a lot of graphic desing work, so I
+                        thought dabble at frontend dev would be fun!
                     </p>
                     <p>I'm currenly a Full Stack student in CoderHouse</p>
-                    
+                    <p>In my free time, I'm either coding or designed and playing games with friend!</p>
+                </div>
+                <div class="separator"></div>
+                <div class="flex">
+                    <div>
+                        <h4>Tools I use/practice</h4>
+                    </div>
+                    <div class="lists">
+                        <ul class="webDevelopment">
+                            <div>
+                                <h6>Web Development</h6>
+                            </div>
+                            <li class="itemListHome"><img src="./image/home/webDevelopment/sass.svg"><span>Sass + Css</span></li>
+                            <li class="itemListHome"><img src="./image/home/webDevelopment/nextjs.svg"><span>Next.js</span></li>
+                            <li class="itemListHome"><img src="./image/home/webDevelopment/vercel.svg"><span>Vercel</span></li>
+                            <li class="itemListHome"><img src="./image/home/more/git-plain.svg"><span>Git</span></li>
+                            <li class="itemListHome"><img src="./image/home/webDevelopment/javascript.svg"><span>JavaScrip</span></li>
+                        </ul>
+                        <ul class="artDesing">
+                            <div>
+                                <h6>Art & Desing</h6>
+                            </div>
+                            <li class="itemListHome"><img src="./image/home/artAndDesing/figma.svg"><span>Figma</span></li>
+                            <li class="itemListHome"><img src="./image/home/artAndDesing/adobe_xd.svg"><span>Adobe Xd</span></li>
+                            <li class="itemListHome"><img src="./image/home/artAndDesing/adobe_indesign.svg"><span>Adobe inDesing</span></li>
+                            <li class="itemListHome"><img src="./image/home/artAndDesing/dribbble.svg"><span>Dribbble</span></li>
+                            <li class="itemListHome"><img src="./image/home/artAndDesing/marvel.svg"><span>Marvel</span></li>
+                        </ul>
+                        <ul class="more">
+                            <div>
+                                <h6>More</h6>
+                            </div>
+                            <li class="itemListHome"><img src="./image/home/more/notion.svg"><span>Notion</span></li>
+                            <li class="itemListHome"><img src="./image/home/more/adobe_illustrator.svg"><span>Adobe Illustrator</span></li>
+                            <li class="itemListHome"><img src="./image/home/more/adobe_photoshop.svg"><span>Adobe Photoshop</span>
+                            </li>
+                            <li class="itemListHome"><img src="./image/home/more/adobe_after_effects.svg"><span>Adobe AfterEffects</span></li>
+                            <li class="itemListHome"><img src="./image/home/webDevelopment/github.svg"><span>Github</span></li>
+
+                        </ul>
+                    </div>
                 </div>
             </article>
-            <div class="introduction">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempore ipsa accusamus beatae,
-                    facere quasi itaque quibusdam ea ipsam quis dolore suscipit excepturi cum esse eligendi eos
-                    architecto
-                    animi vitae.</p>
-            </div>
-            <div class="buttons">
+            <div class="buttonsHome">
                 <button class="workStatusButton">🟢 Available to Work</button>
-                <button class="projectsButton"> My projects</button>
+                <button class="projectsButton">▶ My projects</button>
             </div>
-            <p></p>
-            <article class="boxes">
-                <div class="toolsBox">
-                    <div>
-                        <h3>Tools:</h3>
-                    </div>
-                    <ul class="networkandtoolList">
-                        <div class="separator">
-                            <li class="toolList"><img class="imgBoxes" src="./image/tools/notion.png" alt="Notion" />
-                            </li>
-                            <li class="toolList"><img class="imgBoxes" src="./image/tools/figma.png" alt="Figma" /></li>
-                            <li class="toolList"><img class="imgBoxes" src="./image/tools/adobe_illustrator.png"
-                                    alt="Adobe illustrator" />
-                            </li>
-                        </div>
-                        <div class="separator">
-                            <li class="toolList"><img src="./image/tools/adobe_xd.png" alt="Adobe xd" /></li>
-                            <li class="toolList"><img src="./image/tools/adobe_lightroom.png" alt="Adobe Lightroom" />
-                            </li>
-                            <li class="toolList"><img src="./image/tools/adobe_photoshop.png" alt="Adobe Photoshop" />
-                            </li>
-                        </div>
-                    </ul>
-                </div>
-                <div class="networksBox">
-                    <div>
-                        <h3>Netwoks:</h3>
-                    </div>
-                    <ul class="networkandtoolList">
-                        <div class="separator">
-                            <li class="networkList"><a href="https://github.com/agus1aqui/Porfolio-Agustin-Aquino"><img
-                                        src="./image/networks/github.png" alt="Github" /></a></li>
-                            <li class="networkList"><a href="https://www.linkedin.com/home"><img
-                                        src="./image/networks/linkedin.png" alt="Linkedin" /></a></li>
-                            <li class="networkList"><a href=""><img src="./image/networks/twitter.png"
-                                        alt="Twitter" /></a>
-                            </li>
-                        </div>
-                        <div class="separator" </div>
-                            <li class="networkList"><a
-                                    href="https://m.facebook.com/?locale=es_LA&wtsid=rdr_0uCy2mZGPy1pU9s91"><img
-                                        src="./image/networks/facebook-alt.png" alt="Facebook" /></a></li>
-                            <li class="networkList"><a href="https://www.behance.net/"><img
-                                        src="./image/networks/behance-alt.png" alt="Behance" /></a></li>
-                            <li class="networkList"><a href="https://dribbble.com/"><img
-                                        src="./image/networks/dribbble.png" alt="Dribbble" /></a></li>
-                    </ul>
-                </div>
-            </article>
         </section>
     </main>
     <footer>
-        <p>Derechos Reservados</p>
+        <p>©️2024 Desingned and Development by Agustin Aquino</p>
+        <div>
+            <ul class="footerList">
+                <li class="footerItem"><a href="https://twitter.com/" target="_blank"><img
+                            src="./image/footer/twitter.svg" alt="Twitter"></a></li>
+                <li class="footerItem"><a href="https://www.linkedin.com/home" target="_blank"><img
+                            src="./image/footer/linkedin.svg" alt="Linkedin"></a></li>
+                <li class="footerItem"><a href="https://m.facebook.com/?locale=es_LA&wtsid=rdr_0uCy2mZGPy1pU9s91"
+                        target="_blank"><img src="./image/footer/Facebook.svg" alt="Facebook"></a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 

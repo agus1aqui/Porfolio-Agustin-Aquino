@@ -1,7 +1,33 @@
 footer {
-    grid-area: footer;
+    color: #F8D49A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .footerList {
+        display: flex;
+
+        .footerItem {
+            list-style: none;
+            margin: 5px;
+
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
 }
 
-footer {
-    color: $text-color;
+@media (max-width: 480px) {
+    footer {
+        display: flex;
+        max-width: 480px;
+        font-size: 12px;
+
+        .footerList .footerItem img {
+            width: 20px;
+            height: 20px;
+        }
+    }
 }

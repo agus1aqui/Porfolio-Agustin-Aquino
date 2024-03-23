@@ -14,51 +14,80 @@
 
 <body>
     <aside>
-        <img class="mainPhoto" src="../image/aside/mainPhoto.svg" alt="Main photo">
-        <button class="contactMe"><a href="../pages/contact.html">Contact Me</a></button>
+        <div>
+            <img class="mainPhoto" src="../image/aside/mainPhoto.svg" alt="Main photo">
+            <button class="contactMe"><a href="../pages/contact.html">Contact Me</a></button>
+        </div>
         <ul class="asideList">
-            <li class="asideItem"><img class="imageAsideItem" src="../image/aside/school.png" /><span>CoderHouse</span>
-            </li>
-            <li class="asideItem"><img class="imageAsideItem"
-                    src="../image/aside/design_services.png" /><span>UI/UX</span></li>
-            <li class="asideItem"><img class="imageAsideItem" src="../image/aside/send.png" /><span>Argentina</span></li>
-            <li class="asideItem"><img class="imageAsideItem" src="../image/aside/translate.png" /><span>Eng / Esp</span>
-            </li>
+            <div class="size">
+                <li class="asideItem"><img class="imageAsideItem"
+                        src="../image/aside/school.png" /><span>CoderHouse</span>
+                </li>
+                <li class="asideItem"><img class="imageAsideItem"
+                        src="../image/aside/design_services.png" /><span>UI/UX</span></li>
+            </div>
+            <div class="size">
+                <li class="asideItem"><img class="imageAsideItem" src="../image/aside/send.png" /><span>Argentina</span>
+                </li>
+                <li class="asideItem"><img class="imageAsideItem" src="../image/aside/translate.png" /><span>Eng /
+                        Esp</span>
+                </li>
+            </div>
         </ul>
-        <div class="asideFooter"><img src="../image/aside/github.png" alt="Github" /><img
-                src="../image/aside/dribbble.png" alt="Dribbble" /><img src="../image/aside/behance-alt.png"
-                alt="Behance" /></div>
+        <div class="absolute">
+            <ul class="asideFooter">
+                <li class="asideFooterItem"><img src="../image/aside/github.png" alt="Github"></li>
+                <li class="asideFooterItem"><img src="../image/aside/dribbble.png" alt="Dribble"></li>
+                <li class="asideFooterItem"><img src="../image/aside/behance-alt.png" alt="Behance"></li>
+            </ul>
+        </div>
     </aside>
-    <nav>
+    <header>
         <ul class="navList">
             <li class="listItem"><a href="../index.html">Home</a></li>
             <li class="listItem"><a href="../pages/aboutMe.html">About Me</a></li>
             <li class="listItem"><a href="../pages/projects.html">Projects</a></li>
             <li class="listItem"><a href="../pages/education.html">Education</a></li>
         </ul>
-    </nav>
+    </header>
     <main>
-        <section>
+        <section class="contact">
             <h1>Contact</h1>
-            <form>
-                <div class="boxForm"><label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre">
-                </div>
-                <div class="boxForm"><label for="email">Email:</label>
-                    <input type="email" id="email">
-                </div>
-                <div class="boxForm"><label for="tema">Tema:</label>
-                    <input type="text" id="tema">
-                </div>
-                <div class="boxForm"><label for="comentarios">Comentarios:</label>
-                    <textarea id="comentarios" rows="5"></textarea>
-                </div>
-                <button class="submit" type="submit">Enviar</button>
-            </form>
+            <div class="wrap">
+                <article>
+                    <p>Want to know more about me? Ask about desing work? Feel free to inquire about anything!</p>
+                    <p>For question you'd like to ask public. I'll answer you on my Twitter.</p>
+                </article>
+                <form>
+                    <div class="boxForm"><label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre">
+                    </div>
+                    <div class="boxForm"><label for="email">Email:</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="boxForm"><label for="tema">Tema:</label>
+                        <input type="text" id="tema">
+                    </div>
+                    <div class="boxForm"><label for="comentarios">Comentarios:</label>
+                        <textarea id="comentarios" rows="5"></textarea>
+                    </div>
+                    <button class="submit" type="submit">Enviar</button>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
-        <p>Derechos Reservados</p>
+        <p>©️2024 Desingned and Development by Agustin Aquino</p>
+        <div>
+            <ul class="footerList">
+                <li class="footerItem"><a href="https://twitter.com/" target="_blank"><img
+                            src="../image/footer/twitter.svg" alt="Twitter"></a></li>
+                <li class="footerItem"><a href="https://www.linkedin.com/home" target="_blank"><img
+                            src="../image/footer/linkedin.svg" alt="Linkedin"></a></li>
+                <li class="footerItem"><a href="https://m.facebook.com/?locale=es_LA&wtsid=rdr_0uCy2mZGPy1pU9s91"
+                        target="_blank"><img src="../image/footer/Facebook.svg" alt="Facebook"></a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 

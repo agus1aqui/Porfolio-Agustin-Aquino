@@ -6,6 +6,7 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     /*style*/
     background-color: $main-blue;
     color: $text-color;
@@ -34,15 +35,22 @@ aside {
         }
     }
 
+    div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
     .asideList {
-        min-width: 100%;
         margin-top: 10px;
+        width: 100%;
     }
 
     .asideItem {
         /*flex*/
         display: flex;
         align-items: center;
+        width: 100%;
         /*style*/
         margin-top: 10px;
         margin-bottom: 10px;
@@ -65,14 +73,61 @@ aside {
         display: flex;
         width: 100%;
         justify-content: center;
-        margin: 10px;
         list-style: none;
+        margin-top: 200px;
 
         img {
             margin: 10PX;
             padding: 20px;
             border-radius: 20px;
             background-color: #212A3E;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    aside .absolute {
+        display: none;
+    }
+
+    aside .asideItem {
+        display: none;
+    }
+
+    aside {
+        flex-direction: row;
+        padding: 10px;
+        border-radius: 20px;
+        width: 460px;
+
+        .mainPhoto {
+            width: 80px;
+            height: 80px;
+        }
+
+        .contactMe {
+            padding: 20px;
+            border: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 20px;
+
+            a {
+                font-size: 12px;
+            }
+        }
+
+        .contactMe:hover {
+            transform: scale(1.1);
+            transition: all 1s;
+        }
+
+        div {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-evenly;
         }
     }
 }

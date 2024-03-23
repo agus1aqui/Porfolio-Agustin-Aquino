@@ -1,20 +1,5 @@
-//aside
-@import "../layout/aside.scss";
-//nav
-@import "../layout/nav.scss";
-
-
-
 main {
-    grid-area: main;
-}
-
-main {
-    background-color: #394867;
-    padding: 40px;
-    border-radius: 40px;
-
-    section {
+    .aboutMe {
         .mainTittle {
             margin-bottom: 50px;
 
@@ -25,32 +10,72 @@ main {
             }
         }
     }
+
     .hobbieList {
         list-style: none;
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
     }
-    .hobbieBox {
-        background-color: #ffffff;
+
+    .card {
+        width: 485px;
+        background-color: $main-background;
         padding: 16px;
-        color: #000000;
+        color: #F1F6F9;
         margin: 10px;
         border-radius: 20px;
-        height: 300px;
-        width: 500px;
-    
+
     }
-    .absolute {
-        position: relative;
-        bottom: -10px;
-        border-radius: 1000px;
-        background: url(<path-to-image>), lightgray 1.728px -259.542px / 100% 150% no-repeat;
-        z-index: -1000;
-    }
+
     h3 {
         font-size: 26px;
     }
+
     h6 {
         font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        .aboutMe {
+            h1 {
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                margin-top: 10px;
+            }
+
+            h3 {
+                font-size: 20px;
+                font-weight: 500;
+                margin-top: 20px;
+            }
+
+            .hobbieList {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+
+                .card {
+                    width: 100%;
+
+                    h6 {
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
     }
 }

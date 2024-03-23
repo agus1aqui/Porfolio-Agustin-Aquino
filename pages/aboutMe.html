@@ -14,83 +14,83 @@
 
 <body>
     <aside>
+        <div>
         <img class="mainPhoto" src="../image/aside/mainPhoto.svg" alt="Main photo">
         <button class="contactMe"><a href="../pages/contact.html">Contact Me</a></button>
+        </div>
         <ul class="asideList">
+            <div class="size">
             <li class="asideItem"><img class="imageAsideItem" src="../image/aside/school.png" /><span>CoderHouse</span>
             </li>
             <li class="asideItem"><img class="imageAsideItem"
                     src="../image/aside/design_services.png" /><span>UI/UX</span></li>
-            <li class="asideItem"><img class="imageAsideItem" src="../image/aside/send.png" /><span>Argentina</span>
+            </div>
+            <div class="size">
+            <li class="asideItem"><img class="imageAsideItem" src="../image/aside/send.png" /><span>Argentina</span></li>
+            <li class="asideItem"><img class="imageAsideItem" src="../image/aside/translate.png" /><span>Eng / Esp</span>
             </li>
-            <li class="asideItem"><img class="imageAsideItem" src="../image/aside/translate.png" /><span>Eng /
-                    Esp</span>
-            </li>
+            </div>
         </ul>
-        <div class="asideFooter"><img src="../image/aside/github.png" alt="Github" /><img
-                src="../image/aside/dribbble.png" alt="Dribbble" /><img src="../image/aside/behance-alt.png"
-                alt="Behance" /></div>
+        <div class="absolute">
+            <ul class="asideFooter">
+                <li class="asideFooterItem"><img src="../image/aside/github.png" alt="Github"></li>
+                <li class="asideFooterItem"><img src="../image/aside/dribbble.png" alt="Dribble"></li>
+                <li class="asideFooterItem"><img src="../image/aside/behance-alt.png" alt="Behance"></li>
+            </ul>
+        </div>
     </aside>
-    <nav>
+    <header>
         <ul class="navList">
-            <li class="listItem"></li><a href="../index.html">Home</a></li>
-            <li class="listItem" class="activeButton"></li><a href="../pages/aboutMe.html">About Me</a></li>
+            <li class="listItem"><a href="../index.html">Home</a></li>
+            <li class="listItem"><a class="activeNav" href="../pages/aboutMe.html">About Me</a></li>
             <li class="listItem"><a href="../pages/projects.html">Projects</a></li>
             <li class="listItem"><a href="../pages/education.html">Education</a></li>
         </ul>
-    </nav>
+    </header>
     <main>
-        <section>
+        <section class="aboutMe">
             <h1>About me</h1>
-            <p>Hello! I am Agustin, passionate about UX/UI design, web developer. My journey in the digital world
-                focuses on the creation of Wiframes and Design Systems. Although my professional experience is in its
-                early stages, my enthusiasm for learning and commitment to excellence drive me to overcome any
-                challenge.</p>
-            <div class="separator"></div>
-            <div class="qr"><img src="../image/images/Qr.png"></div>
-            <ul class="infoList">
-                <li class="listItem">Agustin123@gmail.com</li>
-                <li class="listItem">+1 23 4567-8901</li>
-                <li class="listItem">CABA, Argentina</li>
-                <li class="listItem">www.Blog.com</li>
-            </ul>
-            <h3>Hobbies/Temas de interes</h3>
-            <ul class="hobbieList">
-                <div>
-                    <div class="separator">
-                        <li class="hobbieBox">
-                            <div>
-                                <h6>Fotografia</h6>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, unde.</p>
-                            </div>
-                        </li>
-                        <li class="hobbieBox">
-                            <div>
-                                <h6>Web Development</h6>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, excepturi!</p>
-                            </div>
-                        </li>
-                    </div>
-                    <div class="separator">
-                        <li class="hobbieBox">
-                            <div>
-                                <h6>Mobile Apps</h6>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, praesentium?</p>
-                            </div>
-                        </li>
-                        <li class="hobbieBox">
-                            <div>
-                                <h6>Web Desing</h6>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, soluta!</p>
-                            </div>
-                        </li>
-                    </div>
-            </ul>
+            <p>I studied UX/UI design and I am working on making and publishing several of my frames.
+
+                My job involves creating immersive and efficient experiences for users. As a UX Designer I focus on
+                understanding user needs, investigating behaviors and designing effective interaction flows and in UI I
+                focus on visual aesthetics, creating color palettes and graphic elements. Both roles are very important
+                to develop consistent and attractive user interfaces.</p>
+            <h3>Hobbies</h3>    
+            <article>
+                <ul class="hobbieList">
+                    <li class="card">
+                        <h6>Fotografia</h6>
+                        <p>I can take high-quality photographs and improve them in editing.</p>
+                    </li>
+                    <li class="card">
+                        <h6>Web Development</h6>
+                        <p>High quality web development</p>
+                    </li>
+                    <li class="card">
+                        <h6>Mobile Apps</h6>
+                        <p>Development and design for IOS and Android applications</p>
+                    </li>
+                    <li class="card">
+                        <h6>Web Desing</h6>
+                        <p>High level designs</p>
+                    </li>
+                </ul>
+            </article>
         </section>
     </main>
-
     <footer>
-        <p>Derechos Reservados</p>
+        <p>©️2024 Desingned and Development by Agustin Aquino</p>
+        <div>
+            <ul class="footerList">
+                <li class="footerItem"><a href="https://twitter.com/" target="_blank"><img
+                            src="../image/footer/twitter.svg" alt="Twitter"></a></li>
+                <li class="footerItem"><a href="https://www.linkedin.com/home" target="_blank"><img
+                            src="../image/footer/linkedin.svg" alt="Linkedin"></a></li>
+                <li class="footerItem"><a href="https://m.facebook.com/?locale=es_LA&wtsid=rdr_0uCy2mZGPy1pU9s91"
+                        target="_blank"><img src="../image/footer/Facebook.svg" alt="Facebook"></a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 
